@@ -14,5 +14,6 @@ class CashRegister
     cash_register = {}
     cash_register[title] = price * quantity
 
-
+    cash_register.each do |p , q|
+      @total = @total + (p * q)
 end
