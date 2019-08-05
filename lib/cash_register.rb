@@ -11,12 +11,7 @@ class CashRegister
   end
 
   def add_item (title, price, quantity = 1)
-    cash_register = {}
-    cash_register[title] = price * quantity
-
-    cash_register.each do |p , q|
-      @total = @total + (p * q)
-    end
+    @total = @total + price
   end
 
 
