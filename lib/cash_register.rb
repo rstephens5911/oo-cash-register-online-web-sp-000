@@ -10,5 +10,9 @@ class CashRegister
     @total
   end
 
+  def add_item (title, price, quantity = 1)
+    cash_register = {}
+    cash_register[title] = price * quantity
+
 
 end
