@@ -22,7 +22,8 @@ class CashRegister
   end
 
   def apply_discount
-    @@cash_register[title].price
+    @@cash_register.each do |t, p|
+      @total = p - (p * (@discount/100))
   end
 
 
