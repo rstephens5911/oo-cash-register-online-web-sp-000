@@ -16,7 +16,7 @@ class CashRegister
     @@cash_register[title] = price
   end
 
-  def apply_discount
+  def apply_discount(price)
     employee_price = price - (price * (@discount/100))
     employee_price
 
