@@ -12,6 +12,7 @@ class CashRegister
     @price = price
     @total = @total + (price * quantity)
     @items << item
+    @itemsS
   end
 
   def apply_discount
@@ -22,6 +23,10 @@ class CashRegister
     else
       return "There is no discount to apply."
     end
+  end
+
+  def items
+    @items
   end
 
 
