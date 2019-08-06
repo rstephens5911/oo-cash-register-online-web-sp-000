@@ -36,6 +36,7 @@ class CashRegister
     @total = @total - @price
     if @items = []
       @total = 0
+    end
   end
 
 end
