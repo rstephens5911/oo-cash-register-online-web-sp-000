@@ -12,7 +12,7 @@ class CashRegister
   end
 
   def add_item (title, price, quantity = 0)
-    @total = @total + (price * quantity)
+    @total = @total + (price.to_f * quantity)
     @@cash_register[title] = price
   end
 
