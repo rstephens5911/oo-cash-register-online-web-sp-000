@@ -22,11 +22,11 @@ class CashRegister
   end
 
   def apply_discount
-    @@cash_register.each do |t, p|
-      @total = p - (p * (@discount/100))
+    @@cash_register.each do |title, price|
+      init_price = 0
+      init_price = init_price + price
+      @total = init_price - (init_price * (@discount/100))
     end
-    @total
-  end
 
 
 end
