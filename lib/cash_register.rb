@@ -37,6 +37,7 @@ class CashRegister
     @items.pop
     if @items.length == 0
       @total.to_f = 0.0
+    end
   end
 
 end
