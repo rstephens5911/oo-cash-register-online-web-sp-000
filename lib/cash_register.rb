@@ -25,7 +25,7 @@ class CashRegister
     subtotal = 0
     @@cash_register.each do |price, quantity|
       subtotal = subtotal + price
-    @total = subtotal - (subtotal * @discount/100)
+    emp_price = subtotal - (subtotal * @discount/100)
 
   end
 
