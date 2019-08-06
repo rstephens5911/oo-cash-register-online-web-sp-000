@@ -5,13 +5,13 @@ class CashRegister
   def initialize(discount = 0)
     @total = 0
     @discount = discount
-    @@cash_register = {}
+    @items = []
   end
 
-  def add_item (title, price, quantity = 1)
+  def add_item (item, price, quantity = 1)
     @price = price
     @total = @total + (price * quantity)
-    @@cash_register[title] = price
+    @items << item
   end
 
   def apply_discount
@@ -23,5 +23,7 @@ class CashRegister
       return "There is no discount to apply."
     end
   end
+
+  
 
 end
