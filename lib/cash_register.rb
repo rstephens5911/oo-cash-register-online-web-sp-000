@@ -16,9 +16,9 @@ class CashRegister
     @@cash_register[title] = price
   end
 
-  def apply_discount(price)
-    employee_price = price - (price * (@discount/100))
-    employee_price
+  def apply_discount
+    self.add_item(title, price)
+    @total = price - (price * (@discount/100))
 
   end
 
