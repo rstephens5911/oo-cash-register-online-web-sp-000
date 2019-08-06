@@ -14,7 +14,7 @@ class CashRegister
     @@cash_register[title] = price
   end
 
-  def apply_discount
+  def apply_discount > 0
     if @discount
       @special_price = (@price * @discount)/100
       @total = @total - @special_price
