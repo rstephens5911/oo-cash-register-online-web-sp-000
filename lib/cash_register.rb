@@ -22,7 +22,7 @@ class CashRegister
   end
 
   def apply_discount
-    @@cash_register.title(price)
+    @@cash_register[title].price
   end
 
 
