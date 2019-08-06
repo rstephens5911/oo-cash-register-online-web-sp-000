@@ -15,11 +15,13 @@ class CashRegister
   end
 
   def apply_discount
-    @special_price = (@price * @discount)/100
-    @total = @total - @special_price
-    return "After the discount, the total comes to $#{@total}."
-
-
+    if @discount
+      @special_price = (@price * @discount)/100
+      @total = @total - @special_price
+      return "After the discount, the total comes to $#{@total}."
+    else
+      return "There is no discount to apply."
+    end
   end
 
 end
