@@ -22,7 +22,10 @@ class CashRegister
   end
 
   def apply_discount
-    @total = @total - (@total * @discount/100)
+    subtotal = 0
+    @@cash_register.each do |price, quantity|
+      subtotal = subtotal + price
+    @total = subtotal - (subtotal * @discount/100)
 
   end
 
