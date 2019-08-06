@@ -34,9 +34,6 @@ class CashRegister
 
   def void_last_transaction
     @total = @total - @price
-    if @items.size.equals(0)
-      @total.to_f = 0
-    end
   end
 
 end
