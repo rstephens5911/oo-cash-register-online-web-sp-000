@@ -25,7 +25,9 @@ class CashRegister
     @@cash_register.each do |title, price|
       init_price = 0
       init_price = init_price + price
-      employee_price = init_price - (init_price * (@discount/100))
+      emp_discount = (init_price * (@discount/100))
+      empl_total = init_price - emp_discount
+      return empl_total
     end
   end
 
