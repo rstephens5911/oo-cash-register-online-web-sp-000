@@ -6,6 +6,7 @@ class CashRegister
     @total = 0
     @discount = discount
     @items = []
+    @last_transaction = @total
   end
 
   def add_item (item, price, quantity = 1)
@@ -36,7 +37,7 @@ class CashRegister
     if @items = []
       @total = 0
     else
-      @total = @total - @price
+      @total = @total - @last_transaction
     end
   end
 
