@@ -1,5 +1,5 @@
 class CashRegister
-  attr_accessor :total, :discount :items
+  attr_accessor :total, :discount, :items
 
 
   def initialize(discount = 0)
@@ -24,8 +24,6 @@ class CashRegister
       return "There is no discount to apply."
     end
   end
-
-
 
 
 end
