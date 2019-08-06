@@ -16,5 +16,8 @@ class CashRegister
     @@cash_register[title] = price
   end
 
+  def apply_discount
+    @total = @total - (@total * (@discount/100))
+
 
 end
