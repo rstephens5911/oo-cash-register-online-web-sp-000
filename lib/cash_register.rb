@@ -27,7 +27,7 @@ class CashRegister
       init_price = init_price + price
       @total = init_price - (init_price * (@discount/100))
     end
-    end
+  end
 
-
+  
 end
